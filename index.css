@@ -376,3 +376,24 @@
     min-width: 50px;
   }
 }
+.home-parent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home, .about, .services {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .home-parent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home, .about, .services {
+    font-size: 14px;
+    margin: 5px;
+  }
+}
